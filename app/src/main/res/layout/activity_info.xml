@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo"
+    tools:context=".CryptActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="157dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="100dp"
+        android:background="#FC0DD111"
+        android:backgroundTint="#B0000000"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="serif"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textColor="@color/matrix"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/blue"
+        android:backgroundTint="#5B73F8"
+        android:text="Step 1: Cripta una frase con una chiave a tua scelta;
+        \n\nStep 2: Invia la frase criptata al tuo destinario che la criptera a sua volta e te la dovrà rimandare;
+        \n\nStep 3: Decripta la frase ricevuta: con la tua chiave;
+        \n\nStep 4: Manda la frase appena generata al tuo \destinatario, il quale decriptando con la sua chiave, leggera in chiaro il tuo messaggio originale."
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+    <TextView
+        android:id="@+id/nota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/black"
+        android:text="Nota: E' fortemente consigliato per la \n\t\t\t\t\t\t\tsicurezza di usare una chiave lunga lo \n\t\t\t\t\t\t\tstesso o di più della lunghezza del \n\t\t\t\t\t\t\tmessaggio."
+        android:textColor="@color/gold"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back"
+        android:onClick="back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

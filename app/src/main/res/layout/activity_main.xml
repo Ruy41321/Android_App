@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="158dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="20dp"
+        android:background="#FC0DD111"
+        android:backgroundTint="#B0000000"
+        android:backgroundTintMode="multiply"
+        android:fontFamily="serif"
+        android:text="Crypt"
+        android:textAlignment="center"
+        android:textColor="@color/matrix"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="OpenCrypt"
+        android:text="Crittografa"
+        android:fontFamily="serif-monospace"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/red"
+        android:fontFamily="serif-monospace"
+        android:onClick="OpenDecrypt"
+        android:text="Decrittografa"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="181dp"
+        android:backgroundTint="@color/teal_700"
+        android:fontFamily="serif-monospace"
+        android:onClick="OpenInfo"
+        android:text="Info"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
